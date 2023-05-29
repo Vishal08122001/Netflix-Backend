@@ -8,8 +8,8 @@ const userRoutes = require("./routes/UserRoutes");
 connectDb();
 const app = express();
 app.use(cors());
-app.use(express.json());
 app.use("/api/user", userRoutes);
+app.use(express.json());
 
 app.listen(PORT, () => {
   console.log("Running on " + PORT);
