@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const connectDb = require("./Config/dbConnection");
+const connectDb = require("./config/dbConnection");
 require("dotenv").config();
 const PORT = process.env.PORT || 8080;
 const userRoutes = require("./routes/UserRoutes");
